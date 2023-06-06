@@ -73,18 +73,55 @@ header{
 /*========== MEDIA QUERIES ( MEDIUM DEVICES ) ==============*/
 
 @media screen and (max-width: 1024px) {
-   header {
-    height: 68vh;
-   }
+    header {
+        height: auto; /* Adjust the header height as per your design */
+    }
+    .me {
+        display: none; /* Hide the "About Me" section on mobile */
+    }
+    .header__socials {
+        flex-direction: row; /* Show social icons horizontally */
+        justify-content: center; /* Center the social icons horizontally */
+        position: static; /* Remove absolute positioning */
+        margin-top: 2.5rem; /* Adjust the margin as per your design */
+    }
+    .header__socials::after {
+        display: none; /* Hide the vertical line separator */
+    }
+    .scroll__down {
+        display: none; /* Hide the scroll down indicator */
+    }
+    .cta {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /*========== MEDIA QUERIES ( SMALL DEVICES ) ==============*/
-
+     
 @media screen and (max-width: 600px) {
-    header {
-        height: 100vh;
-    }
-    .header__socials, .scroll__down {
-        display: none;
-    }
-}
+            header {
+                height: auto; /* Adjust the header height as per your design */
+            }
+            .me {
+                display: none; /* Hide the "About Me" section on mobile */
+            }
+            .header__socials {
+                flex-direction: row; /* Show social icons horizontally */
+                justify-content: center; /* Center the social icons horizontally */
+                position: static; /* Remove absolute positioning */
+                margin-top: 2.5rem; /* Adjust the margin as per your design */
+            }
+            .header__socials::after {
+                display: none; /* Hide the vertical line separator */
+            }
+            .scroll__down {
+                display: none; /* Hide the scroll down indicator */
+            }
+            .cta {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+ }
