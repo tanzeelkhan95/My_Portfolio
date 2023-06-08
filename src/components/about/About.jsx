@@ -10,7 +10,7 @@ const About = () => {
       <div className="container about_container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image" />
+            <img src={ME} alt="About" />
           </div>
         </div>
         <div className="about__content">
@@ -29,10 +29,9 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Skills</h5>
-              <ul>Java Programming</ul>
-              <ul>Fullstack Web Development</ul>
+              <ul>Fullstack Development</ul>
               <ul>Database Systems SQL/NoSQL</ul>
-              <ul>Automation Testing</ul>
+              <ul>Automation Testing ( Selenium )</ul>
               <ul>Machine / Reinforcement Learning</ul>
               <ul>Networking</ul>
             </article>
