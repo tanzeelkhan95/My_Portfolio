@@ -3,8 +3,26 @@ import './contact.css'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsMessenger } from 'react-icons/bs'
 import {GrInstagram} from 'react-icons/gr'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
+
 
 const Contact = () => {
+  const form = useRef()
+  
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_ec0jysd', 'template_q9jqe5k', form.current, '2dZiwr5diBRKLW0V2')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+        e.target.reset()
+    };
+
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
@@ -31,7 +49,7 @@ const Contact = () => {
           </article>
         </div>
         {/*END OF CONTACT OPTION */}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='text' placeholder='Your Full Name' required />
           <input type="email" name='email' placeholder='Your Email' required />
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
