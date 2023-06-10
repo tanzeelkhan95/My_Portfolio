@@ -40,6 +40,12 @@
     color: var(--color-primary);
 }
 
+.abouth5 {
+    font-size: large;
+    text-align: center;
+    color: var(--color-white);
+}
+
 /*========== MEDIA QUERIES ( MEDIUM DEVICES ) ==============*/
 
 @media screen and (max-width: 1024px) {

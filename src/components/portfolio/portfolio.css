@@ -41,6 +41,11 @@
     margin-bottom: 1.5rem;
     justify-content: center;
 }
+.portfolioh5 {
+    font-size: large;
+    text-align: center;
+    color: var(--color-white);
+}
 
 /*========== MEDIA QUERIES ( MEDIUM DEVICES ) ==============*/
 

@@ -6,9 +6,9 @@ import {GrInstagram} from 'react-icons/gr'
 const headerSocials = () => {
   return (
     <div className='header__socials'>
-        <a href="https://www.linkedin.com/in/mohammad-tanzeel-ur-rehman-3b3414216/" target="_blank"><BsLinkedin/></a>
-        <a href="https://github.com/tanzeelkhan95" target="_blank"><FaGithub/></a>
-        <a href="https://www.instagram.com/tanzeelkhan95/" target="_blank"><GrInstagram/></a>
+        <a href="https://www.linkedin.com/in/mohammad-tanzeel-ur-rehman-3b3414216/" title="Linkedin" target="_blank" rel="noopener noreferrer"><BsLinkedin/></a>
+        <a href="https://github.com/tanzeelkhan95" title="Github" target="_blank" rel="noopener noreferrer"><FaGithub/></a>
+        <a href="https://www.instagram.com/tanzeelkhan95/" title="Instagram" target="_blank" rel="noopener noreferrer"><GrInstagram/></a>
     </div>
   )
 }

@@ -7,11 +7,12 @@ import Portfolio from './components/portfolio/Portfolio'
 import Services from './components/services/Services'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import Theme from './components/theme/Theme'
 
 const App = () => {
   return (
     <>
-      <Header />
+      <Header /><Theme />
       <Nav />
       <About />
       <Experience />

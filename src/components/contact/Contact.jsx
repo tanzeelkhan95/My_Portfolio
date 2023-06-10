@@ -25,7 +25,7 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <h5>Get In Touch</h5>
+      <h5 className='contacth5'>Get In Touch</h5>
       <h2>Contact Me</h2>
       <div className="container contact__container">
         <div className="contact__options">
@@ -33,19 +33,19 @@ const Contact = () => {
             < AiOutlineMail className='contact__option-icon' />
             <h4>Email</h4>
             <h5 className='mh'>mohammadtanzeel.ur@gmail.com</h5>
-            <a href="mailto:mohammadtanzeel.ur@gmail.com" target="_blank">Message me</a>
+            <a href="mailto:mohammadtanzeel.ur@gmail.com" target="_blank" rel="noopener noreferrer">Message me</a>
           </article>
           <article className='contact__option'>
             < BsMessenger className='contact__option-icon' />
             <h4>Messenger</h4>
             <h5>Tanzeel Ur Rehman</h5>
-            <a href="https://m.me/tanzeel.urrahman.967" target="_blank">Message Me</a>
+            <a href="https://m.me/tanzeel.urrahman.967" target="_blank" rel="noopener noreferrer">Message Me</a>
           </article>
           <article className='contact__option'>
             < GrInstagram className='contact__option-icon' />
             <h4>Instagram</h4>
             <h5>@tanzeelkhan95</h5>
-            <a href="https://www.instagram.com/tanzeelkhan95/" target="_blank">Message Me</a>
+            <a href="https://www.instagram.com/tanzeelkhan95/" target="_blank" rel="noopener noreferrer">Message Me</a>
           </article>
         </div>
         {/*END OF CONTACT OPTION */}

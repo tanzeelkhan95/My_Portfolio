@@ -1,0 +1,112 @@
+.purple-theme {
+    --color-bg: #363062;
+    --color-bg-variant: #4D4C7D;
+    --color-primary: #D8B9C3;
+    --color-primary-variant: #827397;
+}
+
+.green-theme {
+    --color-bg: #08313A;
+    --color-bg-variant: #1A5653;
+    --color-primary: #5CD85A;
+    --color-primary-variant: #107869;
+}
+
+.blue-theme {
+    --color-bg: #1f1f38;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #4db5ff;
+    --color-primary-variant: rgba(77, 181, 255, 0.4); 
+}
+
+.theme_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: fixed;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    padding: 0.2rem 0.2rem;
+    z-index: 2;
+    bottom: 50%;
+    border-radius: 1rem;
+    backdrop-filter: blur(15px);
+    margin-right: 0.5rem;
+}
+
+.theme_items a {
+    background: transparent;
+    display: flex;
+    border-radius: 1rem;
+    color: var(--color-light);
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.theme_items a:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.theme_items a.active {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+  
+.nav-toggle {
+    background: transparent;
+    color: var(--color-primary);
+    transition: var(--transition);
+    position: absolute;
+    z-index: 1;
+    right: 8.4rem;
+    bottom: 30%;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.nav-toggle:hover {
+    color: var(--color-white);
+}
+
+/*========== MEDIA QUERIES ( MEDIUM DEVICES ) ==============*/
+
+@media only screen and (max-width: 1024px) {
+    .theme_items {
+        flex-direction: row;
+        bottom: 90%;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        right: -2rem;
+        position: fixed;
+        bottom: 85%;
+    }
+ }
+
+/*========== MEDIA QUERIES ( SMALL DEVICES ) ==============*/
+ 
+ @media only screen and (max-width: 600px) {
+    .theme_items {
+        flex-direction: row;
+        bottom: 90%;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        right: -2rem;
+        position: absolute;
+        bottom: 30%;
+    }
+ }

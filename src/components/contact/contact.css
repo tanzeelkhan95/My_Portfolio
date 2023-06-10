@@ -37,6 +37,12 @@
     font-size: 0.8rem;
 }
 
+.contacth5 {
+    font-size: large;
+    text-align: center;
+    color: var(--color-white);
+}
+
 /* ============== FORM ============== */
 
 form {
