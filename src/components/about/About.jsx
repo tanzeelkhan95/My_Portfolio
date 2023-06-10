@@ -42,6 +42,8 @@ const About = () => {
               <ul><b>Email:</b> mohammadtanzeel.ur@gmail.com</ul>
               <ul><b>Phone 1:</b> +36-30-735-4381</ul>
               <ul><b>Phone 2:</b> +92-326-0750391</ul>
+              <ul><b>Nationality:</b> Pakistani</ul>
+              <ul><b>Residence:</b> Hungary</ul>
             </article>
           </div>
           <div className="button">
