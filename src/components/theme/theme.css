@@ -59,7 +59,6 @@
     color: var(--color-primary);
     transition: var(--transition);
     position: absolute;
-    z-index: 1;
     right: 8.4rem;
     bottom: 30%;
     transform: rotate(90deg);
@@ -73,7 +72,7 @@
 
 /*========== MEDIA QUERIES ( MEDIUM DEVICES ) ==============*/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
     .theme_items {
         flex-direction: row;
         bottom: 90%;

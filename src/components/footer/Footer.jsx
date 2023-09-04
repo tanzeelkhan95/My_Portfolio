@@ -25,7 +25,8 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; 2023 Tanzeel Tech All right reserved.</small>
+        <small>&copy; 2023 Tanzeel Tech All right reserved.</small><br />
+        <small>Portfolio Version: 2.0</small>
       </div>
     </footer>
   )

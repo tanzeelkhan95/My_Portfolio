@@ -31,3 +31,17 @@
     background-color: var(--color-primary);
     color: var(--color-bg);
 }
+
+/* Initially hidden */
+.nav__items.hidden {
+  opacity: 0;
+  pointer-events: none; /* To prevent interaction when hidden */
+  transition: opacity 0.5s ease; /* Adjust the transition duration as needed */
+}
+  
+  /* Visible */
+  .nav__items.visible {
+    opacity: 1;
+    pointer-events: auto; /* Enable interaction when visible */
+    transition: opacity 0.5s ease; /* Adjust the transition duration as needed */
+  }

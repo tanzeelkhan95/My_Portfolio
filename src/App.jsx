@@ -12,7 +12,8 @@ import Theme from './components/theme/Theme'
 const App = () => {
   return (
     <>
-      <Header /><Theme />
+      <Header />
+      <Theme />
       <Nav />
       <About />
       <Experience />
